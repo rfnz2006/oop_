@@ -30,7 +30,7 @@ unsigned Scanner::Apply(Field& field, int x, int y)
 {
 	
     std::cout << "Used scanner: x = " << x << ", y = " << y << std::endl;
-    return field.Scan2x2(x, y);
+    return field.Scan2x2(X, Y);
 }
 
 
