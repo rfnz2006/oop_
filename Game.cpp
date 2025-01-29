@@ -110,8 +110,8 @@ void Game::initializePlayerField()
             try {
                 flag = b.PlaceShip(i, x, y, ori);
             }
-            catch (const std::exception& e) {
-                std::cout << "Error: " << e.what() << std::endl;
+            catch (const MyException& e) {
+                std::cout << "Error: " << e.GetErrorText() << std::endl;
             }
 
             attempts++;
